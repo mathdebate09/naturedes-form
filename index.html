@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naturedes</title>
-    <link rel="stylesheet" src="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="display-content">
-        <img src="assets/background.png" alt="Icy mountains with blue skies" height="100%">
+        <img class="background" src="assets/background.png" alt="Icy mountains with blue skies" height="auto 100%">
         <div class="banner">
             <img class="logo" src="assets/logo.png" alt="Naturedes Logo">
             <p class="logo-text">Naturedes</p>
         </div>
     </div>
-    
+
     <div class="text-content">
         <p class="pre-text">Immerse yourself in the enchanting symphony of nature with our sightseeing ventures. Wander
             through lush landscapes and panoramic vistas, where every step reveals a masterpiece crafted by the earth.
@@ -26,28 +26,41 @@
         <div class="form-content">
             <p class="form-header">Let's do this!</p>
             <form action="example.com/path" method="post">
-                <label for="first-name">FIRST NAME</label><br>
-                <input type="text" id="first-name">
+                    <div>
+                        <label for="first-name">FIRST NAME</label><br>
+                        <input type="text" id="first-name">
+                    </div>
 
-                <label for="last-name">LAST NAME</label><br>
-                <input type="text" id="last-name">
+                    <div>
+                        <label for="last-name">LAST NAME</label><br>
+                        <input type="text" id="last-name">
+                    </div>
 
-                <label for="email">EMAIL ADDRESS</label><br>
-                <input type="email" id="email" name="email">
+                    <div>
+                        <label for="email">EMAIL ADDRESS</label><br>
+                        <input type="email" id="email" name="email">
+                    </div>
 
-                <label for="amount">PHONE NUMBER</label><br>
-                <input type="number" id="amount" name="amount">
+                    <div>
+                        <label for="amount">PHONE NUMBER</label><br>
+                        <input type="number" id="amount" name="amount">
+                    </div>
 
-                <label for="password">PASSWORD</label><br>
-                <input type="password" id="password" name="password">
+                    <div>
+                        <label for="password">PASSWORD</label><br>
+                        <input type="password" id="password" name="password">
+                    </div>
 
-                <label for="password-cnf">PASSWORD</label><br>
-                <input type="password" id="password-cnf" name="password">
-            </form>
+                    <div>
+                        <label for="password-cnf">CONFIRM PASSWORD</label><br>
+                        <input type="password" id="password-cnf" name="password">
+                    </div>
+                </form>
         </div>
-
+        <div class="footer">
         <button class="register" type="submit">Create Account</button>
-        <p class="log-in-text">Already have an account? <a class="log-in-link"href="">Log in</a>></a></p>
+        <p class="log-in-text">Already have an account? <a class="log-in-link"href="">Log in</a></p>
+        </div>
     </div>
 </body>
 

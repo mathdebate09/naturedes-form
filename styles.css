@@ -1,15 +1,128 @@
+/* FONT FACES */
 @font-face {
-    font-family:Zaitun;
-    src:"assets/Zaitun.ttf";
-}
-@font-face {
-    font-family:Nexa;
-    src:"assets/Nexa-Heavy.ttf";
+    font-family: Zaitun;
+    src: url("assets/Zaitun.ttf");
 }
 
+@font-face {
+    font-family: Nexa;
+    src: url("assets/Nexa-ExtraLight.ttf");
+}
+
+/* GLOBAL STYLES */
 :root {
-    --heavy-blue:#166B92;
-    --background-clr:#EEF0F2;
-    --sky-blue:#7FD1F7;
-    --dull-blue:#5693B3;
+    --heavy-blue: rgb(22, 107, 146);
+    --background-clr: #EEF0F2;
+    --sky-blue: rgb(126, 208, 247);
+    --dull-blue: rgb(87, 146, 179);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-clr);
+}
+
+a {
+    text-decoration: none;
+    font-weight:bolder;
+    color:var(--heavy-blue);
+}
+
+input {
+    font-size:1.3rem;
+    border: 1px solid rgba(22, 107, 146, 0.4);
+    background-color:#f7fbff;
+}
+
+/* DISPLAY CONTENT */
+.display-content {
+    position: relative;
+}
+
+.background {
+    height: 100vh;
+    width: auto;
+}
+
+/* BANNER */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background-color: rgba(87, 146, 179, .6);
+    width: 100%;
+    position: absolute;
+    top: 11.5em;
+    height: 160px;
+}
+
+.logo-text {
+    font-family: 'Zaitun', serif;
+    font-size: 5em;
+    color: #EEF0F2;
+}
+
+.logo {
+    filter: invert(91%) sepia(6%) saturate(73%) hue-rotate(170deg) brightness(106%) contrast(92%);
+    width: 150px;
+}
+
+/* TEXT CONTENT */
+.text-content {
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:2rem;
+}
+
+.pre-text{
+    margin-bottom:0;
+}
+
+.form-content,
+.pre-text,
+.advert,
+.footer {
+    padding-left: 3rem;
+}
+
+.form-content {
+    background-color: aliceblue;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1em;
+    padding-left: 3rem;
+    margin-bottom:1em;
+    font-size:2rem;
+}
+
+.form-header {
+    margin-top:18px;
+}
+
+form {
+    font-weight:bolder;
+    font-family: "Nexa",serif;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 0.3fr);
+    row-gap:1rem;
+}
+
+/* FOOTER CONTENT */
+.register {
+    width:auto+6px;
+    padding:0.8rem;;
+    font-size:1.5rem;
+    color:aliceblue;
+    font-weight:bolder;
+    background-color:var(--heavy-blue);
+    border:none;
+    border-radius:10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
