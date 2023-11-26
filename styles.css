@@ -1,0 +1,15 @@
+@font-face {
+    font-family:Zaitun;
+    src:"assets/Zaitun.ttf";
+}
+@font-face {
+    font-family:Nexa;
+    src:"assets/Nexa-Heavy.ttf";
+}
+
+:root {
+    --heavy-blue:#166B92;
+    --background-clr:#EEF0F2;
+    --sky-blue:#7FD1F7;
+    --dull-blue:#5693B3;
+}
